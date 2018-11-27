@@ -11,8 +11,8 @@ elemElitismo = 2;
 numGeneraciones = 10;
 
 %% Variables
-patronX = codifPseudoBinaria( 0, 49.9999999999999999999 );
-patronY = codifPseudoBinaria( -1000, 999.9999999999999999999999 );
+patronX = codifPseudoBinaria( -360, 360 );
+patronY = codifPseudoBinaria( -360, 360 );
 
 printCodPseudBin(patronX);
 printCodPseudBin(patronY);
@@ -56,6 +56,8 @@ for i = 1 : numGeneraciones
     [ pobNueva, valNuevos ] = generarSigPob( numElem, pobActual, fxy, patrones, elemElitismo, umbralCruz, umbralMut );
     [ fxy ] = funcionAdapt1( valNuevos(1, :)', valNuevos(2, :)');
 end
+
+
 
 [ vx, vy, vf ] = elemGanador(fxy, valNuevos);
 

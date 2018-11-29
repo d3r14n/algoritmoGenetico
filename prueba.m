@@ -56,16 +56,16 @@ title('Comparación');
 grid on;
 hold off;
 
-figure;
-plot(ejeX, fxyHist(:,1), '*', 'Linewidth', 1); hold on
-title('Población 0');
-grid on;
-hold off;
-for i = 1 : numGeneraciones
-    figure;
-    plot(ejeX, fxyHist(:,((i * 3) + 1)), '*', 'Linewidth', 1); hold on
-    title(['Población ' num2str(i)]);
-    grid on;
-    hold off;
-end
-[ vx, vy, vf ] = elemGanador(fxy, valNuevos);
+% figure;
+% plot(ejeX, fxyHist(:,1), '*', 'Linewidth', 1); hold on
+% title('Población 0');
+% grid on;
+% hold off;
+% for i = 1 : numGeneraciones
+%     figure;
+%     plot(ejeX, fxyHist(:,((i * 3) + 1)), '*', 'Linewidth', 1); hold on
+%     title(['Población ' num2str(i)]);
+%     grid on;
+%     hold off;
+% end
+[ vx, vy, vf, winnerPos ] = elemGanador(fxy, valNuevos);

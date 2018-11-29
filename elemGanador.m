@@ -1,8 +1,8 @@
-function [ vx, vy, vf ] = elemGanador( fxy, vals )
+function [ vx, vy, vf, winner ] = elemGanador( fxy, vals )
 %UNTITLED4 Summary of this function goes here
 %   Detailed explanation goes here
     
-    vx = 0; vy = 0; vf = 0;
+    vx = 0; vy = 0; vf = 0; winner = 0;
     
     winner = selElitismo( fxy, 1 );
      

@@ -92,5 +92,5 @@ function [ codigo ] = codifPseudoBinaria( valorIni, valorFin )
      %%    codigo.datos=codigo.datos*-1;
      %%end;  
      codigo.datos=sort(codigo.datos,'descend');
-     printCodPseudBin(codigo);
+%      printCodPseudBin(codigo);
 end

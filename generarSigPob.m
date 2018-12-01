@@ -42,8 +42,8 @@ function [ pobNueva, valNuevos ] = generarSigPob( n, pobActual, funcionXYZW, ...
        end
    end
    
-   fprintf("Población con elitismo /n");
-   printElemPseudoBin(pobNueva);
+%    fprintf("Población con elitismo /n");
+%    printElemPseudoBin(pobNueva);
    
    %% seleccion por pares
    while (cont<n)
@@ -65,8 +65,8 @@ function [ pobNueva, valNuevos ] = generarSigPob( n, pobActual, funcionXYZW, ...
        end             
    end
    
-   fprintf("Población con pares /n");
-   printElemPseudoBin(pobNueva);
+%    fprintf("Población con pares /n");
+%    printElemPseudoBin(pobNueva);
    
    %% mutacion de los elementos que no ingresaron por elitismo
    
@@ -85,8 +85,8 @@ function [ pobNueva, valNuevos ] = generarSigPob( n, pobActual, funcionXYZW, ...
        end
    end
    
-   fprintf("Población con mutación /n");
-   printElemPseudoBin(pobNueva);
+%    fprintf("Población con mutación /n");
+%    printElemPseudoBin(pobNueva);
    
    %% interpretación numérica de los elementos
    for i=1:numVariables   
